@@ -1,0 +1,20 @@
+.totalit{
+    text-align: right;
+}
+.casualwear{
+    text-align: left !important;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+
+
+
+@media  screen and (max-width:425px) {
+    .sort-selection--style{
+        font-weight: 600;
+        padding: 10px 5px;}
+}
+
+
+
+

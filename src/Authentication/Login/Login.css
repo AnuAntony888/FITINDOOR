@@ -1,0 +1,90 @@
+body {
+  overflow-x: hidden;
+}
+.familylogo1 {
+  width: 150px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginbox {
+  padding: 2.5%;
+}
+.username {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.textfieldloginuser {
+  width: 100%;
+}
+.gridwidth {
+  width: 100% !important;
+}
+.logintxt {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: rgba(90, 90, 90, 1);
+}
+.forgetpassword {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(33, 33, 33, 1) !important;
+  text-transform: none !important;
+  text-decoration: underline !important;
+
+  float: right;
+}
+
+.required {
+  color: red;
+}
+.Loginbtn {
+  width: 100%;
+  background-color: rgba(33, 33, 33, 1) !important  ;
+  color: white;
+  text-transform: none !important;
+  padding: 3% !important;
+  font-family: CamptonBook !important;
+  font-weight: bolder !important;
+}
+
+.Loginwithfacebookbtn {
+  width: 100%;
+  background-color: rgba(66, 103, 178, 1) !important  ;
+  color: white;
+  padding: 10px !important;
+  font-family: CamptonLight !important;
+  text-transform: none !important;
+}
+
+.Loginwithgooglebtn {
+  width: 100% !important;
+  background-color: rgba(66, 133, 244, 1) !important  ;
+  color: white !important;
+  padding: 10px !important;
+  text-transform: none !important;
+  font-family: CamptonBook !important;
+}
+.nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  font-family: CamptonLight !important;
+}
+.account {
+  color: rgba(33, 33, 33, 1) !important;
+  text-transform: none !important;
+  text-align: center !important;
+}
+
+.register {
+  color: rgba(33, 33, 33, 1) !important;
+  text-decoration: underline;
+  text-transform: none !important;
+  font-weight: 600;
+}

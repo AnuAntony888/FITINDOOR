@@ -1,0 +1,184 @@
+header {
+  padding-right: 0 !important;
+}
+body {
+  padding-right: 0;
+}
+.familylogo {
+  width: 190px;
+  cursor: pointer;
+  float: left;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .familylogo {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1301px) {
+  .familylogo {
+    width: 130px;
+  }
+}
+
+.familylogo2 {
+  width: 140px;
+
+  padding-left: 3.5%;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: none !important;
+  background-color: transparent;
+}
+
+.singin {
+  font-family: CamptonLight !important;
+  color: black !important;
+  text-transform: none !important;
+  font-size: 0.9rem !important;
+}
+.key {
+  color: rgba(0, 0, 0, 0.2);
+}
+.dropbtn {
+  font-family: CamptonBook;
+}
+.dropbtn:hover .key {
+  transform: rotate(-180deg) !important;
+}
+.drawer {
+  padding-top: 40px;
+}
+
+.closeicon {
+  margin-right: 10px;
+}
+
+/***************************************************************/
+.form-select {
+  width: fit-content !important;
+  margin-left: 1%;
+}
+/*****************************************/
+
+.singin {
+  float: right !important;
+  margin-left: 2% !important;
+}
+
+.brands_hd {
+  font-family: CamptonBook;
+  font-size: 1rem;
+
+  color: black !important;
+  text-decoration: none !important;
+}
+.linkstyle:hover {
+  text-decoration: none !important;
+}
+
+.menu_button {
+  font-size: 0.8rem !important;
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.li_whitespace {
+  /* white-space: break-spaces; */
+  padding: 5px;
+}
+.header_menu_button {
+  width: fit-content;
+  min-width: 40px;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-right: 2px !important;
+  padding-left: 3px !important;
+}
+.menuicon {
+  min-width: 40px !important;
+}
+
+.form-select:focus {
+  border-color: lightgray !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(236, 238, 240, 1);
+}
+#english_arabic {
+  justify-content: flex-end !important;
+  display: flex;
+  align-items: flex-end;
+  right: 0px !important;
+}
+
+.slick_header_txt {
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  color: rgba(33, 33, 33, 1);
+  margin-top: 7px;
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: left;
+  line-height: 20px;
+  overflow: hidden;
+}
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  min-width: 0 !important;
+}
+
+hr {
+  margin: 0.5rem 0 !important;
+}
+
+.dropdown {
+  position: inherit !important;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100vw;
+  /* width: 100%; */
+  left: 0;
+  top: 100%;
+
+  align-items: center;
+  padding-top: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-height: 500px; */
+}
+
+#my_account {
+  font-weight: bolder;
+}
+@media screen and (max-width: 1200px) {
+  .brands_hd {
+    margin-top: auto;
+    padding-bottom: 0px !important;
+    margin-bottom: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #my_account {
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 370px) {
+  #my_account {
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+}

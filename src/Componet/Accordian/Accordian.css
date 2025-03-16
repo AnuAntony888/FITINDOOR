@@ -1,0 +1,23 @@
+
+
+.actxt{font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    font-family: 'CamptonBook' !important;
+    float: left;
+    }
+
+
+    button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .on {
+        color: #000;
+      }
+      .off {
+        color: #ccc;
+      }
+
+   

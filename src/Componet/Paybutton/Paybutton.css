@@ -1,0 +1,45 @@
+.strip.Mui-selected {
+  border: 1px solid !important;
+  color: #000 !important;
+}
+.stripimg {
+  height: 50px;
+  width: 100%;
+}
+input[aria-label="ZIP"] {
+  display: none !important;
+}
+.stripepaymentbutton {
+  /* background-color: #000 !important; */
+  color: #fff;
+  width: 85%;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+  font-family: CamptonBook;
+  font-weight: bolder;
+}
+.stripejerseypaymentbutton {
+  background-color: #000;
+  color: #fff;
+  min-width: 200px;
+  padding: 1%;
+  border-radius: 5px;
+  font-family: CamptonBook;
+  font-weight: bolder;
+}
+.sr-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
+.card_name {
+  font-family: CamptonBook !important;
+  text-align: left;
+  display: block;
+}

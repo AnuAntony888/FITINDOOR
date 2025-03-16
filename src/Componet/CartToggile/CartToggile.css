@@ -1,0 +1,84 @@
+/*****************************/
+.cart__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.639);
+    z-index: 99999;
+  }
+  
+  .cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+  }
+  
+  .cart__close {
+    width: 100%;
+    height: 60px;
+  
+    padding: 10px 20px;
+  }
+  
+  .cart__close span i {
+    font-size: 1.1rem;
+    background: #212245;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+  }
+  .cart__item-list {
+    height: calc(100vh - 140px);
+    overflow-y: scroll;
+    padding-bottom: 50px;
+  }
+  
+  .check_out_button_disable{height: 60px;
+    text-transform: capitalize !important;
+    font-family: CamptonBook !important;}
+  .check_out_button{
+    background-color: black !important;
+    height: 60px;
+    text-transform: capitalize !important;
+    font-family: CamptonBook !important;
+  }
+
+  .proceed{
+    padding: 30px !important;
+    margin-top: 20px;
+    color: #fff !important;
+  }
+
+  .shoppingcart{
+    
+    font-weight: bolder;
+    font-family: CamptonBook !important;
+  }
+.checkout_hrf{
+  font-family: CamptonLight !important;
+  font-size: .9rem;
+
+  color: black !important;
+  text-decoration: none !important
+}
+  @media only screen and (max-width: 576px) {
+    .cart {
+      width: 300px !important;
+    }
+  }
+
+  /******************************************/
+  .carttxt{
+    text-align: left;
+  }
+  .cartpadding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }

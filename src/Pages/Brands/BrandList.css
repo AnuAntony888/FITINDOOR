@@ -1,0 +1,78 @@
+.brandList_address_btn {
+  width: 300px;
+  max-width: 100%;
+  background-color: rgba(33, 33, 33, 1) !important;
+  color: white;
+  text-transform: none !important;
+  padding: 10px !important;
+  font-weight: bolder;
+  border-radius: 5px;
+  font-family: CamptonBook;
+}
+
+.brand_name_txt {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgba(33, 33, 33, 1) !important;
+  font-weight: 600;
+}
+
+.brand_productcount_txt {
+  font-size: 1rem;
+
+  color: rgba(90, 90, 90, 1);
+}
+
+body {
+  overflow-x: hidden;
+}
+.top_homehd1 {
+  text-align: left;
+  font-family: imported;
+}
+.imagebrand {
+  /* border: solid 1px lightgray; */
+  width: 70%;
+  border-radius: 15px !important;
+}
+.topbranddiv {
+  padding-top: 2%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+}
+.topbrandlist_home {
+  border-radius: 15px !important;
+}
+.Listbrandsdiv {
+  padding-right: 3%;
+
+  padding-left: 3%;
+}
+
+.top_brand_home:hover .imagebrand {
+  transform: scale(1.2) !important;
+  -webkit-transition: opacity 0.3s ease,
+    -webkit-transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  transition: opacity 0.3s ease,
+    transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    -webkit-transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.top_brand_name {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500 !important;
+}
+
+@media screen and (max-width: 769px) and (min-width: 450px) {
+  .topbranddiv {
+    /* padding-top: 7%; */
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .topbranddiv {
+    /* padding-top: 10%; */
+  }
+}

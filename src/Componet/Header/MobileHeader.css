@@ -1,0 +1,31 @@
+.accordian_box_shadow{
+    box-shadow: none !important;
+}
+.familylogo_mobile{
+    width: 85%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 25%;
+}
+.practise_th{
+  
+    padding: 10px !important;
+    border-bottom:.5px solid  rgba(224, 224, 224, 1) !important; 
+}
+.drawer_bot_width{
+    padding-bottom: 15px;
+}
+
+.Heading_main2{
+    margin-bottom: 0 !important;
+   cursor: pointer;
+font-family: imported !important;
+    font-weight: 400;
+    font-size: 1rem !important;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: black;
+    font-family: CamptonBook !important;
+}
+
+

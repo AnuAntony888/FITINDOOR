@@ -1,0 +1,45 @@
+
+.Thankgivenpage{ padding-left: 10%;
+padding-bottom: 5%;
+padding-right: 10%}
+#thankyou{
+    padding: 20px !important;
+}
+
+.ordergrid{text-align: left !important;}
+.thankyou{
+         border: solid .1px lightgray;
+        height: 100px;
+         box-shadow: none !important;
+         text-align: left !important;
+         background-color:rgba(251 ,251 ,251,1);
+}
+
+
+.ORDERNUMBER{
+    font-size: .7rem !important;
+    line-height: 1.25rem;
+    font-family: imported;
+    text-transform: capitalize;
+    font-family: CamptonLight !important;
+}
+
+.orderlist{
+    color: rgba(33,33,33,1);
+    font-size: 1rem;
+    font-family: CamptonLight !important;
+    font-weight: bolder !important;
+    word-break: break-all;
+
+}
+
+.tablecells{background-color: rgb(224, 224, 224) !important;
+    color: black !important; 
+}
+.backto_home{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+    text-decoration: underline;
+}

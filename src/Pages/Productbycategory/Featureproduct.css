@@ -1,0 +1,175 @@
+.flashsale {
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-right: 3%;
+  scroll-snap-align: start;
+}
+
+#price {
+  font-weight: bolder !important;
+  color: black !important;
+}
+.flashsalebox {
+  border: solid;
+  border-width: 1px;
+  border-color: transparent;
+  padding: 2%;
+}
+.flashsaletxt1 {
+  font-size: 2rem !important;
+  text-align: left;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(33, 33, 33, 1);
+  font-weight: bolder;
+  line-height: 2rem;
+  font-family: CamptonBook !important;
+}
+
+.flashsalecardpadding {
+  padding: 10px;
+}
+.flashsalebody {
+  height: 100% !important;
+  box-shadow: none !important;
+}
+
+.flbrandtxt1 {
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  color: rgba(33, 33, 33, 1);
+  /* height: 40px; */
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 20px; /* Height / no. of lines to display */
+  overflow: hidden;
+  font-family: CamptonBook !important;
+}
+
+.flbrandtxt2 {
+  font-size: 0.8rem;
+  text-align: left;
+  color: rgba(90, 90, 90, 1);
+  /* height:40px; */
+  line-height: 20px; /* Height / no. of lines to display */
+  overflow: hidden;
+}
+
+.flbrandtxt2 div,
+.flbrandtxt2 p {
+  text-align: left !important;
+}
+/**********************linkunderline*********************/
+.linkstyle {
+  color: transparent !important;
+  text-decoration: none !important;
+}
+.linkstyle:hover {
+  color: transparent !important;
+  text-decoration: none !important;
+}
+
+.flbrandtxtpop2 {
+  text-align: left;
+}
+
+.btnflashsale {
+  text-transform: none !important;
+}
+
+.imagheight {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* background-color: #eeeeee; */
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+.list_body_all {
+  border-top-left-radius: 5px;
+  box-shadow: none !important;
+}
+.imagheight {
+  height: 250px !important;
+  z-index: -20000;
+}
+.imagli12 {
+  height: 230px !important;
+  margin: auto !important;
+  transition: transform 0.3s, filter 1.5s ease-in-out !important;
+}
+
+.list_body_all:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%) !important;
+  transform: translateY(-10px) !important;
+}
+
+.card_boday_down {
+  padding: 10px 10px !important;
+}
+.delprice {
+  font-size: 1rem !important;
+  line-height: 1.75rem !important;
+  color: lightgray;
+}
+
+.link {
+  text-decoration: none !important;
+}
+/******************trending***********************/
+.list_body_all_trending {
+  box-shadow: none !important;
+}
+
+.list_body_all_trending:hover .imagli12 {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1026px) {
+  .flbrandtxt1 {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 426px) {
+  .flbrandtxt1 {
+    font-size: 0.8rem !important;
+  }
+
+  .flbrandtxt2 {
+    font-size: 0.8rem;
+  }
+}
+
+/*****************Tab*****************************/
+.MenuItem {
+  color: gray !important;
+  text-transform: capitalize !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  font-family: CamptonLight !important;
+}
+
+/* Increase the specificity */
+.MenuItem.Mui-selected {
+  color: black !important;
+  font-weight: bolder !important;
+  font-family: CamptonBook !important;
+}
+@media screen and (max-width: 769px) and (min-width: 425px) {
+  .flashsaletxt1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 426px) and (min-width: 320px) {
+  .flashsaletxt1 {
+    font-size: 1.25rem !important;
+  }
+}

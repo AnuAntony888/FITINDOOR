@@ -1,0 +1,72 @@
+#shop_name {
+  color: #000 !important;
+  font-family: CamptonBook !important;
+  font-weight: bolder !important;
+  text-align: center;
+}
+
+.shop_by_categorydiv {
+  padding-left: 3%;
+  padding-right: 3%;
+  scroll-snap-align: start;
+}
+.sliderhomecat {
+  /*  
+    background-color:    rgb(97 93 93 / 80%)  !important; 
+     opacity: .5; */
+
+  border-radius: 5% !important;
+}
+
+.uk-inline:hover .sliderhomecat {
+  background-color: rgb(26, 19, 19) !important;
+  opacity: 0.5 !important;
+
+  border-radius: 5% !important;
+}
+.Homeshopbycategoryimg {
+  border-radius: 5%;
+}
+.homecat_padding {
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.slickbuttonprev {
+  left: 0 !important;
+
+  top: 20% !important;
+  z-index: 1000 !important;
+  position: absolute !important;
+  margin: auto;
+  border-radius: 50% !important;
+  background-color: whitesmoke !important;
+  display: block;
+  position: absolute;
+}
+
+.slickbuttonnext {
+  display: block;
+  position: absolute;
+  right: -10px !important;
+  top: 20% !important;
+  z-index: 1000 !important;
+  position: absolute;
+
+  margin: auto;
+  border-radius: 50% !important;
+  background-color: whitesmoke !important;
+}
+
+.slick-slider {
+  position: relative;
+
+}
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}

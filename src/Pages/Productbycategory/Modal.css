@@ -1,0 +1,67 @@
+
+.popViewbtn{
+  width: 100%;
+    background-color: rgba(33,33,33,1)  !important  ;
+    color: white;
+   text-transform: none !important;
+   font-family: CamptonBook !important;
+   font-weight: bolder !important;
+ 
+}
+.modal_price_Aed{
+  color: black !important;
+}
+.popupcard{
+    box-shadow: none !important;
+}
+.modal_image{
+  padding-top: 10px;
+  width: 60% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardaligmentright{
+  padding: 0px !important;
+
+}
+
+#onselling_txt{
+  font-family: CamptonBook !important;
+  font-weight: bolder;
+}
+.modal_name{
+  font-family: CamptonBook;
+  font-weight: bolder !important;
+}
+.modal_price {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: red;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: left;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.modal_right_side_sizeadj{
+  min-width: 350px !important;
+}
+
+.deleteprice_modal{
+  color:gray;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width:600px) {
+  .modal_price {
+    font-size: 1rem;
+  }
+  .deleteprice_modal{
+    color:gray;
+    font-size: 1rem;
+  }
+}
+

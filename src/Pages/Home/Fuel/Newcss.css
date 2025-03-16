@@ -1,0 +1,31 @@
+.Home_new_content_1 { 
+
+    color: rgba(33,33,33,1);
+    font-family: 'CamptonBook';
+    width: 100%; 
+    margin-bottom: 8px;
+
+    overflow: hidden;
+    font-weight: bolder;
+ }
+ .new_banner2{
+    color: rgba(33,33,33,1);
+    font-family: 'CamptonBook';
+    text-transform: uppercase !important; 
+ }
+ .new_banner_text{
+    color: rgba(33,33,33,1);
+    font-family: 'CamptonBook';
+    text-align: left;
+    /* text-transform: uppercase !important;  */
+ }
+
+ .popViewbtn_1{
+    /* width: 100%; */
+      background-color: rgba(33,33,33,1)  !important  ;
+      color: white;
+     text-transform: none !important;
+     font-family: CamptonBook !important;
+     font-weight: bolder !important;
+   
+  }

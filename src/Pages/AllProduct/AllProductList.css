@@ -1,0 +1,37 @@
+.List {
+  padding-top: 30px;
+  display: block;
+}
+
+@media screen and (max-width: 902px) {
+  .List_filter_section {
+    display: block;
+  }
+
+  .button_filter {
+    cursor: pointer;
+    color: black !important;
+    padding: 8px 25px !important;
+    border-color: #dee2e6 !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button_filter {
+    cursor: pointer;
+    color: black !important;
+    padding: 8px 5px !important;
+    border-color: #dee2e6 !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .myAccount {
+    text-align: center !important;
+  }
+}
+.meata_head_category {
+  font-family: "CamptonBook";
+  font-weight: bolder;
+  font-size: 20px;
+}

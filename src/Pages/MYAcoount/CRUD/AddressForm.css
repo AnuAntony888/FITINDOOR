@@ -1,0 +1,27 @@
+.Addressinputtxt{
+    width: 100%;
+border-radius: 5px ;
+border:  1px solid gray;
+    padding: 6px;
+}
+
+.addnewaddheading{
+    text-align: center;
+}
+.addressform{
+    padding-left: 15px;
+   
+}
+
+
+.saveadress{
+    width:100%;
+    background-color: rgba(33,33,33,1)  !important  ;
+    color: white;
+   text-transform: none !important;
+   padding:  10px !important;
+     font-family: CamptonBook !important;
+    }
+
+.addressformtitle{font-weight: 600;
+color: black;}

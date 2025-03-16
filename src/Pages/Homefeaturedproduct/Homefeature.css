@@ -1,0 +1,23 @@
+.home_featur_div {
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-right: 3%;
+}
+
+.feture_home {
+  border: solid;
+  border-width: 1px;
+  border-color: transparent;
+  padding: 2%;
+}
+
+.card_feature_home {
+  background-color: #f0f0f0 !important;
+  box-shadow: none;
+}
+
+.card_feature_home {
+  background-color: rgb(235, 241, 246);
+  opacity: 1;
+}

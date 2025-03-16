@@ -1,0 +1,27 @@
+.contact_formtitle{
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+
+.contact_address_btn {
+    /* width: 30%; */
+    background-color: rgba(33,33,33,1) !important;
+    color: white;
+    text-transform: none !important;
+    padding: 10px !important;
+    float: left;
+}
+
+.my_Contact_us{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+.icon_contact_us{
+border:1px solid #ced4da;
+    background-color: transparent;
+}

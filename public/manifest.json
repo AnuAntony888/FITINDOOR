@@ -1,0 +1,52 @@
+{
+  
+    "name": "My Family Fitness",
+    "short_name": "My Family Fitness",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "start_url": "https://myfamilyfitness.com/",
+    "prefer_related_applications": true
+  
+  
+   ,
+
+  "icons": [
+    
+    {
+      "src": "maskableicon.png",
+      "sizes": "273x273",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose":"any maskable"
+    },
+
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose":"any maskable"
+    }
+  ]
+ 
+}
+
+ 
+

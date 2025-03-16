@@ -1,0 +1,56 @@
+@font-face {
+  font-family: CamptonLight;
+  src: url(../src/campton-cufonfonts/CamptonLight.otf);
+}
+@font-face {
+  font-family: CamptonBook;
+  src: url(../src/campton-cufonfonts/CamptonBook.otf);
+}
+body {
+  padding-right: unset !important;
+  overflow: auto !important;
+  overflow-x: hidden !important;
+}
+.App {
+  text-align: center;
+  font-family: CamptonLight !important;
+}
+.styles-module_whatsappButton__tVits {
+  margin-bottom: -20px !important;
+}
+select.sort-selection--style option:hover {
+  box-shadow: 0 0 10px 100px #1882a8 inset !important;
+}
+select:focus > option:checked {
+  background: #000 !important;
+}
+.AuthorizeWithUrlApp-container {
+  display: none !important;
+}
+.css-1bigob2,
+.css-1ex1afd-MuiTableCell-root,
+.css-1ygcj2i-MuiTableCell-root,
+.css-q34dxg {
+  font-family: CamptonLight !important;
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+}
+@media screen and (max-width: 900px) {
+  .styles-module_whatsappButton__tVits {
+    margin-bottom: 44.5px !important;
+  }
+  #chat-bot-launcher-container.chat-bot-avatar-launcher #chat-bot-launcher {
+    margin-bottom: 36.2px !important;
+  }
+  #chat-bot-launcher-container.chat-bot-avatar-launcher,
+  #chat-bot-launcher-container.chat-bot-launcher-notext {
+    bottom: 38px !important;
+  }
+}
+h1,
+h2,
+h3,
+h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

@@ -1,0 +1,57 @@
+.myAccountimg {
+  background-image: url(https://myfamilyfitness.com/assets/images/shop/shop-banner.jpg);
+}
+.myexplore {
+  font-size: 2rem;
+  color: #f5f5f5;
+  font-weight: 600;
+  transform: translateY(-180px);
+}
+.myAccount {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #f5f5f5;
+  font-weight: 600;
+  font-family: CamptonBook;
+  transform: translateY(-170px);
+}
+.mynavlink {
+  color: #000 !important;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.mynavlink.active {
+  color: #000 !important;
+  font-weight: 800;
+  line-height: 1.5rem;
+  background-color: #d3d3d3 !important;
+}
+.mynavlink:hover {
+  text-decoration: none !important;
+}
+.myaccountmargin {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+.taptxtleft {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+.dashbord {
+  text-align: left;
+}
+.dashbold {
+  font-weight: 800;
+}
+.dashbold1 {
+  color: #000;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.mybrands {
+  text-transform: capitalize;
+  color: #f5f5f5;
+}

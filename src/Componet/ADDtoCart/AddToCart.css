@@ -1,0 +1,68 @@
+.colors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btnStyle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+
+  margin-left: 1.5rem;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btnStyle:hover {
+  opacity: 1;
+}
+.active {
+  opacity: 1;
+}
+.checkStyle {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.anju {
+  background-color: transparent;
+  width: 2.7rem;
+  height: 2.7rem;
+  transform: translate(-0.72rem, -0.4rem);
+  border: 0.5px solid black;
+}
+
+.anju2 {
+  background-color: transparent;
+  width: 2.7rem;
+  height: 2.7rem;
+  transform: translate(-0.72rem, -0.4rem);
+  border: 0.5px solid lightgrey;
+}
+
+@media screen and (max-width: 500px) {
+  #addtocart {
+    font-size: 0.99rem;
+  }
+}
+@media screen and (max-width: 427px) {
+  #addtocart {
+    font-size: 0.97rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #addtocart {
+    /* font-size: .8rem; */
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #addtocart {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,67 @@
+body {
+  color: black;
+}
+.checkoutgrid {
+  padding: 5%;
+}
+
+.shadow-checkoutCardtxt {
+  text-align: left !important;
+}
+.shadow-checkoutCardheading {
+  color: rgba(33 33 33) !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  font-family: CamptonBook !important;
+}
+#checkout_mainbtn {
+  width: 85%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.boxcheckoutphone {
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  /* width:250px; */
+  padding-right: 0px;
+}
+#userdetails {
+  border: solid 1px lightgray;
+}
+.amountcheckoutbold {
+  font-weight: 600 !important;
+  color: black;
+  font-family: "CamptonBook" !important;
+}
+.checkoutadresstxt1 {
+  font-weight: bold;
+  color: black;
+}
+
+.checkoutproduct {
+  font-weight: 800;
+  color: #000;
+  padding-left: 20px;
+}
+.checkout_image {
+  width: 75px !important;
+  height: 75px !important;
+}
+.ordercheckouttxt {
+  background-color: lightgray;
+  padding-top: 20px !important;
+  padding-bottom: 5px;
+}
+.subtotalcheck {
+  float: right !important;
+  padding-right: 50px;
+}
+#diabled_color {
+  background-color: gray !important;
+  width: 85%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+

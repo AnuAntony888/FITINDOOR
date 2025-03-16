@@ -1,0 +1,19 @@
+.banner_split{
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    scroll-snap-align: start;
+}
+
+.Banner_split_image{border-radius: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 100%;
+ };
+.Banner_split_image:hover {
+    transform: scale(1.2);
+    -webkit-transition: opacity .3s ease, -webkit-transform 8s cubic-bezier(.25, .46, .45, .94);
+    transition: opacity .3s ease, transform 8s cubic-bezier(.25, .46, .45, .94), -webkit-transform 8s cubic-bezier(.25, .46, .45, .94);
+}

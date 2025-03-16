@@ -1,0 +1,68 @@
+.Home_on_sellingproduct{
+   padding-bottom: 1%;
+   padding-left: 3%;
+   padding-top: 1%;
+   padding-right: 3%;
+   scroll-snap-align: start;
+}
+.home_selling_product{
+ border: solid .01px #e3e5e7;
+/* height: 210px !important; */
+ border-radius: 15px !important;
+   box-shadow: none !important;
+   
+}
+
+.home_selling_product:hover{
+   transform: translateY(-5px) !important;
+ 
+}
+.deleteprice{
+   color: gray;
+}
+.Homefeaturetxt2{float: left;
+   font-size: 18px;
+   padding-top: 20px;
+   color: red;
+}
+.Homeon_selling_txt {
+   font-size: 16px;
+   line-height: 1.75rem;
+   color: rgba(33,33,33,1);
+   /* height: 40px; */
+   font-family: 'CamptonBook';
+   width: 100%;
+   padding-top: 20px;
+font-weight: bolder;
+   margin-bottom: 8px;
+   text-align: left;
+   line-height: 20px;
+   overflow: hidden;
+}
+.homefeature_description p,.homefeature_description div{
+   margin-bottom: 5px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+#onselling_txt{width:100%}
+@media screen and (max-width:769px) {
+   .avatar_homeselling{
+
+      background-color: darkgreen !important;
+      width:  80px !important;
+      height: 30px;
+      display: flex;
+      float: none !important;
+      right: -25px;
+    }
+}
+
+
+
+    
+@media screen and (max-width:426px) {
+   .avatar_homeselling{right: 15px;}}
+
+   

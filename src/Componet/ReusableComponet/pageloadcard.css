@@ -1,0 +1,43 @@
+.popupcard {
+  box-shadow: none !important;
+}
+
+.popupwidth {
+  padding: 1%;
+}
+
+.cardaligmentright {
+  text-align: center !important;
+  padding-top: 50px;
+}
+.subscripe {
+  color: rgba(90, 90, 90, 1) !important;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: CamptonBook !important;
+}
+
+.getoffer {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  font-weight: bolder;
+  color: rgba(33, 33, 33, 1);
+  margin-bottom: 2.25rem;
+  font-family: CamptonBook !important;
+}
+.Dosubscribe {
+  font-family: CamptonLight !important;
+  line-height: 1.75rem;
+  color: rgba(90, 90, 90, 1);
+  text-align: center;
+}
+.cancelicon{
+  display: flex;
+  float: right;
+
+  font-size: 1.7rem !important;
+
+}

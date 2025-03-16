@@ -1,0 +1,22 @@
+
+  
+.homeoffer1{padding-left: 10px !important;
+padding-right: 10px !important;
+/* padding-top: 5px; */
+scroll-snap-align: start;
+}
+
+
+
+.homeoffer1img{
+  /* min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  aspect-ratio: auto; */
+  height: 100%;
+width: 100%;
+
+}
+
+

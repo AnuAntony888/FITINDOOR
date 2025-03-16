@@ -1,0 +1,12 @@
+.myprivacynavlink.active{
+    color: black !important;
+    font-weight: 800;
+    line-height: 1.5rem;
+    background-color: transparent!important;
+}
+
+
+    .myprivacynavlink {
+        color: black !important;
+        text-align: left;
+    }

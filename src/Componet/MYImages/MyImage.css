@@ -1,0 +1,9 @@
+
+.image_grid_large_lg ,.box-image--style--lg{display: none !important;}
+.image_grid_large{display: block !important;}
+.imagezoom:hover{transform: scale(1.3);}
+
+@media screen and (max-width:899px) and (min-width:280px){
+    .image_grid_large_lg ,.box-image--style--lg{display: block !important;}
+    .image_grid_large{display: none !important;}
+}

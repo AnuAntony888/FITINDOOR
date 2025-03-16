@@ -1,0 +1,14 @@
+.typographyiconhead {
+  font-family: CamptonBook !important;
+  font-weight: bolder !important;
+}
+.verticalline {
+  border-left: solid 2px;
+  height: 20px;
+  margin: auto;
+}
+
+#pop_content{color: #000 !important;
+    font-family: CamptonBook !important;
+
+    text-align: center;}
