@@ -97,8 +97,8 @@ function Header() {
     <div>
       <AppBar
         sx={{
-          // backgroundColor: "white",
-          backgroundImage: `url(${imagemain}/${data?.[0]?.image})`,
+           backgroundColor: "white",
+          // backgroundImage: `url(${imagemain}/${data?.[0]?.image})`,
           backgroundRepeat: "no-repeat",
           color: "black",
           position: "sticky",
@@ -106,7 +106,7 @@ function Header() {
           // width: "100%",
           boxShadow: "none",
           maxHeight: "109px",
-          backgroundColor: isLoading ? "white" : "transparent",
+          // backgroundColor: isLoading ? "white" : "transparent",
         }}
       >
         <Toolbar>

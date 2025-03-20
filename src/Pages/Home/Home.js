@@ -24,6 +24,8 @@ import BestSeller from "./Fuel/BestSeller";
 import HomeBanner4 from "./Fuel/HomeBanner4";
 import Hotdeal from "./Fuel/Hotdeal";
 import Clients from "./Fuel/Clients";
+import { GetSubcategories } from "../../client-api/APIcategory";
+import Subscription from "./Fuel/Subscription";
 
 const Home = () => {
   React.useEffect(() => {
@@ -31,17 +33,22 @@ const Home = () => {
   }, []);
   //  const { data: homepagetheme, isLoading } = Getfetchsettings();
   const { data } = Home_bg_Body();
+  const { datasubcategory } = GetSubcategories();
   return (
     <>
       <HomeBanner1 />
       <HomeBanner2 />
-      <Homeshopbycategory />
-      <SopbyCategory />
+      {/* <Homeshopbycategory /> */}
+      <SopbyCategory data={datasubcategory?.[0]?.sub_categories} />
       <HomeBanner3 />
       <BestSeller />
+      <SopbyCategory data={datasubcategory?.[1]?.sub_categories} />
       <HomeBanner4 />
+      <SopbyCategory data={datasubcategory?.[2]?.sub_categories} />
       <Hotdeal />
+      <SopbyCategory data={datasubcategory?.[3]?.sub_categories} />
       <Clients />
+      <Subscription/>
       <Box
         sx={{
           backgroundImage: `url(${imagemain}/${data?.[0]?.image})`,

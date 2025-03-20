@@ -51,7 +51,7 @@ const FooterContent = () => {
     <div
       className="footer_div"
       style={{
-        backgroundImage: `url(${imagemain}/${footerbg?.[0]?.image})`,
+        // backgroundImage: `url(${imagemain}/${footerbg?.[0]?.image})`,
         // backgroundPosition:!matches?'bottom':'right'
         backgroundPositionX: !matches ? "bottom" : "right",
         backgroundPositionY: "bottom",
