@@ -3,7 +3,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const SopbyCategory = ({ data }) => {
+const SopbyCategory = ({ data ,name}) => {
 
 
   return (
@@ -11,7 +11,7 @@ const SopbyCategory = ({ data }) => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={3} sx={{ padding: "2%" }}>
           <Grid item lg={12} md={12} xs={12} sx={{ textAlign: "left" }}>
-            <h2 className="Home_new_content_1"> Shop by Category</h2>
+            <h2 className="Home_new_content_1"> {`Shop by ${name}` } </h2>
           </Grid>
           {data?.filter((data) => data?.show_incat === 1)
             .map((data, index) => (

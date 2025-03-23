@@ -89,3 +89,16 @@ export function Testmonial() {
   const { data, error, isLoading } = useQuery("testimonaial", Testmonialdata);
   return { data, error, isLoading };
 }
+
+
+
+//testimonal
+export function Section3() {
+  const section3= async () => {
+    const res = await axios.get(`${API}/fetch-home-section?section_type=3`);
+
+    return res.data.data;
+  };
+  const { data, error, isLoading } = useQuery("section3", section3);
+  return { data, error, isLoading };
+}

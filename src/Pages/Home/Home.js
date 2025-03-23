@@ -37,16 +37,15 @@ const Home = () => {
   return (
     <>
       <HomeBanner1 />
-      <HomeBanner2 />
-      {/* <Homeshopbycategory /> */}
-      <SopbyCategory data={datasubcategory?.[0]?.sub_categories} />
+      <HomeBanner2 />      {/* <Homeshopbycategory /> */}
+      <SopbyCategory data={datasubcategory?.[0]?.sub_categories} name={'Fitness Indoor'} />
       <HomeBanner3 />
       <BestSeller />
-      <SopbyCategory data={datasubcategory?.[1]?.sub_categories} />
+      <SopbyCategory data={datasubcategory?.[1]?.sub_categories} name={ 'Activities Outdoor'} />
       <HomeBanner4 />
-      <SopbyCategory data={datasubcategory?.[2]?.sub_categories} />
+      <SopbyCategory data={datasubcategory?.[2]?.sub_categories} name={'Games & Sports' } />
       <Hotdeal />
-      <SopbyCategory data={datasubcategory?.[3]?.sub_categories} />
+      <SopbyCategory data={datasubcategory?.[3]?.sub_categories} name={ 'Active Kids'} />
       <Clients />
       <Subscription/>
       <Box
