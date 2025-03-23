@@ -95,8 +95,8 @@ export function Testmonial() {
 //testimonal
 export function Section3() {
   const section3= async () => {
-    const res = await axios.get(`${API}/fetch-home-section?section_type=3`);
-
+    const res = await axios.post(`${API}/fetch-home-section?section_type=3`);
+// console.log(res,"res")
     return res.data.data;
   };
   const { data, error, isLoading } = useQuery("section3", section3);

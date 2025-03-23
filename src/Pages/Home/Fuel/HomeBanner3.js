@@ -1,5 +1,7 @@
 import { Box, Button, Grid, Card, Badge, CardMedia, CardContent } from "@mui/material";
 import React from "react";
+import { Section3 } from "../../../client-api/APInewdesign";
+import { Bannerimages } from "../../../Icons/Reuseheading";
 
 const HomeBanner3 = () => {
   // Sample data for mapping (replace with actual data)
@@ -7,7 +9,8 @@ const HomeBanner3 = () => {
     { id: 1, title: "Card 1" },
     { id: 2, title: "Card 2" },
   ];
-
+  const { data } = Section3();
+  console.log(data?.[0].url,"data")
   return (
     <div>
       <Box sx={{ flexGrow: 1 ,backgroundColor:'#F5F5F5',paddingTop:'3%',paddingBottom:'3%'}}>
@@ -138,7 +141,10 @@ const HomeBanner3 = () => {
             </Grid>
                   </Grid>
                   <Grid item lg={5} md={5} sm={12} xs={12}>
-                      <img src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/hero-4-edited-1024x640-1.jpeg" alt=""  width={'100%'} style={{borderRadius:'10px'}}/>
+            <img
+      
+              src={data?.[0].url} 
+              alt="" width={'100%'} style={{ borderRadius: '10px' }} />
                     <br/>
                       <h2 className="Home_new_content_1" style={{textAlign:'left',paddingTop:'20px',paddingBottom:'20px'}}>The Perfect Choice for Athletic Excellence</h2>
             <p className="new_banner_text">
