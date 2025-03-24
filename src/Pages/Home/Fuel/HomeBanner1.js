@@ -18,6 +18,7 @@ import { resetProduct } from "../../../redux/cartUiSlice";
 import { useAuthContext } from "../../../Context/AuthContext";
 import { UsergetwishList } from "../../../client-api/Apiuserdetails";
 import { Link } from "react-router-dom";
+import { Newhomemainbanner } from "../../../client-api/ApiHomeBanner";
 
 const HomeBanner1 = () => {
   const { data } = ProductBanner1();
@@ -39,24 +40,27 @@ const HomeBanner1 = () => {
   const { getuserdata } = useAuthContext();
 
   const { data: datas } = UsergetwishList(getuserdata);
+  const { data: banner } = Newhomemainbanner();
+console.log(banner?.[0]?.banner_id,banner?.[0],banner?.[0].image,"banner")
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} alignItems="center">
         {/* Banner (3/4 width) */}
         <Grid item xs={12}>
           <Card>
-            <CardMedia
-              component="img"
-            
-              image="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/12/hero-1-1536x1024.webp"
-              alt="Banner"
-              sx={{ height:"100vh",width:'100%',}}
-            />
+    
+              <CardMedia
+                component="img"
+                image={`https://admin.myfamilyfitness.com/uploads/banner/images/${banner?.[0].image}`}
+                alt="Banner"
+                sx={{ height: "100vh", width: '100%', }}
+              />
+    
             
           </Card>
         </Grid>
 
-        {/* Cards Section (1/4 width) */}
+        
         <Grid item xs={12}>
           <Grid
             container
@@ -117,7 +121,7 @@ const HomeBanner1 = () => {
                             width: "100%",
                              height: "250px",
                             margin: "auto",
-                            // objectFit: "contain",
+                             objectFit: "contain",
                           }}
                           // src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/10/product-5-768x768.jpg"
                            src={`https://ik.imagekit.io/thmmwwbpc/product/images/${curElem?.product?.images?.[0]?.url}`}
