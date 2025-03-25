@@ -2,7 +2,10 @@ import { Box, Button, CardHeader, Grid, Typography } from '@mui/material'
 import React from 'react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Newcss.css'
+import { Section1 } from '../../../client-api/APInewdesign';
 const HomeBanner2 = () => {
+    const { section1} = Section1();
+    console.log(section1,"data")
   return (
       <div>
           <Box sx={{ flexGrow: 1 }}>

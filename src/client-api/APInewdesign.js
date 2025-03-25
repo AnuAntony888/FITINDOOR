@@ -1,6 +1,6 @@
 import axios from "axios";
 import { API } from "./APIcategory";
-import { useQuery } from "react-query";
+import { useMutation, useQuery } from "react-query";
 //home_section1
 export function ProductBanner1() {
   const ProductBanner1 = async () => {
@@ -101,4 +101,36 @@ export function Section3() {
   };
   const { data, error, isLoading } = useQuery("section3", section3);
   return { data, error, isLoading };
+}
+
+
+
+
+//sectin 1
+
+
+
+
+
+
+export function Section1() {
+  const formData = new FormData();
+  formData.append("section_type[]", 1); // Corrected key
+
+  const getSection1 = async () => {
+    const res = await axios.post(`${API}/fetch-home-section`, formData, {
+      method: "POST",
+    });
+    console.log(res.data.data,"section1");
+    return res.data.data;
+  };
+
+  const {
+    data: section1,
+    error: issection1,
+    isLoading: issection1Error ,
+  } = useQuery(["getSection1"], getSection1 );
+  return { section1,issection1,issection1Error};
+
+ 
 }
