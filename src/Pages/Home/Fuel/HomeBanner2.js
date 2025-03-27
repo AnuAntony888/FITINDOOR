@@ -1,11 +1,14 @@
 import { Box, Button, CardHeader, Grid, Typography } from '@mui/material'
 import React from 'react'
+
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Newcss.css'
 import { Section1 } from '../../../client-api/APInewdesign';
+import { secionimage } from '../Home';
+import { Link } from 'react-router-dom';
 const HomeBanner2 = () => {
     const { section1} = Section1();
-    console.log(section1,"data")
+    console.log(section1,`https://admin.myfamilyfitness.com/public/uploads/section/images/${section1?.prod_image}`,"section1")
   return (
       <div>
           <Box sx={{ flexGrow: 1 }}>
@@ -27,7 +30,11 @@ const HomeBanner2 = () => {
                   <Grid item lg={4} md={6} sm={12} xs={12}>
                       <Box sx={{marginTop:'100px'}}>
                       <img
-        src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/12/hero-1-2048x1366.webp"
+     src={section1?.[0]?.prod_image 
+        ? `${secionimage}/${section1?.[0]?.prod_image}`
+        : 'https://your-default-image-url.com/default.jpg'}
+      
+          
         alt=""
                           width="100%"
                                     height="650px"
@@ -39,10 +46,10 @@ const HomeBanner2 = () => {
                        
         }} 
                           />
-<h3 className="Home_new_content" style={{textAlign:'left',fontWeight:'bold',transform:'translate(90px,-40px)'}}>  Treadmill</h3>
+                          <h3 className="Home_new_content" style={{ textAlign: 'left', fontWeight: 'bold', transform: 'translate(90px,-40px)' }}>  {section1?.[0]?.prod_name}</h3>
                     
 <p className="Homeon_selling_txt" style={{textAlign:'left',fontWeight:'bold',transform:'translate(90px, -60px)'}}>
-                     View    < ArrowRightAltIcon />
+<Link      to={section1?.[0]?.prod_url} style={{color:'black',textDecoration:'none'}}>View  </Link>    < ArrowRightAltIcon />
                           </p>
                       </Box>
     
@@ -50,7 +57,9 @@ const HomeBanner2 = () => {
                   <Grid item lg={4} md={6} sm={12} xs={12}>
                       <Box>
                       <img
-        src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/12/hero-a-2048x1366.webp"
+            src={section1?.[0]?.prod_image 
+                ? `${secionimage}/${section1?.[0]?.prod_image1}`
+                : 'https://your-default-image-url.com/default.jpg'}
         alt=""
                           width="100%"
                           height="650px"
@@ -62,20 +71,22 @@ const HomeBanner2 = () => {
                    
                       
         }} 
-      /><h3 className="Home_new_content" style={{ textAlign: 'left', fontWeight: 'bold', transform: 'translate(90px,-40px)' }}>  Treadmill</h3>
+      /><h3 className="Home_new_content" style={{ textAlign: 'left', fontWeight: 'bold', transform: 'translate(90px,-40px)' }}>  {section1?.[0]?.prod_name1}</h3>
                     
                     <p className="Homeon_selling_txt" style={{textAlign:'left',fontWeight:'bold',transform:'translate(90px,-60px)'}}>
-                                         View    < ArrowRightAltIcon />
+                                       <Link  style={{color:'black',textDecoration:'none'}}   to={section1?.[0]?.prod_url1}>View  </Link>  < ArrowRightAltIcon />
                                               </p></Box>
      
     </Grid>
     
     <Grid item  lg={4} md={12} sm={12} xs={12}>
-    <p className='new_banner2' style={{
+    {/* <p className='new_banner2' style={{hhhhhhhhhh
                           paddingTop:'20px'
-                      }}>100% plant-based</p>
-                      <h2 className="Home_new_content_1">  Collections Spotlight</h2>
-                      <p className='new_banner_text'>At Fuel+, we’re on a mission to redefine the way you think about nourishing your body. We believe that exceptional taste should coexist with unwavering commitment to your well-being and the planet. That’s why we’ve dedicated ourselves to crafting a range of plant-based foods, organic powders, bars, and chocolates that are as delicious as they are nourishing.</p>
+                      }}>100% plant-based</p> */}
+                      <h2 className="Home_new_content_1">  {section1?.[0]?.name}</h2>
+                      <p className='new_banner_text'
+                      dangerouslySetInnerHTML={{ __html:section1?.[0]?.description }}
+                      ></p>
                       <Button
             variant="contained"
             className="popViewbtn_1"
@@ -83,7 +94,7 @@ const HomeBanner2 = () => {
             id="addtocart"
             // onClick={() => handleAddToCart(addToCartData)}
           >
-           Shop All
+        <Link to={section1?.[0]?.url} style={{color:'white',textDecoration:'none'}}>Shop All</Link>   
           </Button>
                   </Grid>
   </Grid>

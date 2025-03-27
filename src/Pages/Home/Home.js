@@ -26,7 +26,7 @@ import Hotdeal from "./Fuel/Hotdeal";
 import Clients from "./Fuel/Clients";
 import { GetSubcategories } from "../../client-api/APIcategory";
 import Subscription from "./Fuel/Subscription";
-
+export const secionimage = "https://admin.myfamilyfitness.com/public/uploads/section/images/";
 const Home = () => {
   React.useEffect(() => {
     window.scrollTo({ behavior: "smooth", top: 0 });
