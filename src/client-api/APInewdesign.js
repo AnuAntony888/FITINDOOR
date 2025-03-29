@@ -134,3 +134,26 @@ export function Section1() {
 
  
 }
+
+
+export function Section2() {
+  const formData = new FormData();
+  formData.append("section_type[]", 2);
+  formData.append("section_type[]", 3);
+  const getSection2 = async () => {
+    const res = await axios.post(`${API}/fetch-home-section`, formData, {
+      method: "POST",
+    });
+    console.log(res.data?.data,"section1");
+    return res.data?.data;
+  };
+
+  const {
+    data: section2,
+    error: issection2,
+    isLoading: issection2Error ,
+  } = useQuery(["getSection2"], getSection2 );
+  return { section2,issection2,issection2Error};
+
+ 
+}

@@ -1,7 +1,10 @@
 import { Box, Button, Grid, Card, Badge, CardMedia, CardContent } from "@mui/material";
 import React from "react";
-import { Section3 } from "../../../client-api/APInewdesign";
+
 import { Bannerimages } from "../../../Icons/Reuseheading";
+import { Section2 } from "../../../client-api/APInewdesign";
+import { Link } from "react-router-dom";
+import { secionimage } from "../Home";
 
 const HomeBanner3 = () => {
   // Sample data for mapping (replace with actual data)
@@ -9,40 +12,40 @@ const HomeBanner3 = () => {
     { id: 1, title: "Card 1" },
     { id: 2, title: "Card 2" },
   ];
-  const { data } = Section3();
-  console.log(data?.[0].url,"data")
+  const { section2 } = Section2();
+  console.log(section2,"data")
   return (
     <div>
       <Box sx={{ flexGrow: 1 ,backgroundColor:'#F5F5F5',paddingTop:'3%',paddingBottom:'3%'}}>
         <Grid container spacing={3} alignItems="center" sx={{ padding: "2%" }}>
           <Grid item lg={7} md={7} sm={12} xs={12}>
-            <p
+            {/* <p
               className="new_banner2"
               style={{
                 paddingTop: "20px",
               }}
             >
               100% plant-based
-            </p>
-            <h2 className="Home_new_content_1">Fuel+ New Arrivals: Plant-Powered Goodness</h2>
-            <p className="new_banner_text">
-              At Fuel+, we’re on a mission to redefine the way you think about
-              nourishing your body. We believe that exceptional taste should
-              coexist with unwavering commitment to your well-being and the
-              planet. That’s why we’ve dedicated ourselves to crafting a range
-              of plant-based foods, organic powders, bars, and chocolates that
-              are as delicious as they are nourishing.
-            </p>
+            </p> */}
+            <h2 className="Home_new_content_1">{section2?.[1]?.name}</h2>
+            <p className="new_banner_text"
+                                  dangerouslySetInnerHTML={{ __html:section2?.[1]?.description }}
+            />
+                             
+        
+       
             <Button variant="contained" className="popViewbtn_1" id="addtocart">
-              Shop All
+           <Link to={section2?.[1]?.url } style={{color:'white',textDecoration:'none'}}>Shop All</Link>   
             </Button>
             <Grid container spacing={3} alignItems="center" sx={{ padding: "2%" }}>
-              {products.map((product) => (
             
-                  <Grid item lg={6} xs={12} md={6} sm={12} key={product.id}>
-                  <Card sx={{ boxShadow: 3 }}>
+            
+                  <Grid item lg={6} xs={12} md={6} sm={12} key={""}>
+                <Link to={section2?.[1]?.
+prod_url}>
+                <Card sx={{ boxShadow: 3 }}>
                   
-                    {/* <CardMedia component="img"  image={product.image} alt={product.name} /> */}
+                    
                <Box sx={{ position: "relative" }}>
                     
                       <Badge
@@ -59,11 +62,13 @@ const HomeBanner3 = () => {
         backgroundColor: "#995E65", // Wine Red color
         color: "white", // Ensures text is visible
         padding: "15px",
-        // borderRadius: "5px",
+       
       },
     }}
   />
-                      <CardMedia component="img" image={product.image} alt={product.name} />
+                    <CardMedia component="img" image={section2?.[1]?.prod_image 
+                                    ? `${secionimage}/${section2?.[1]?.prod_image}`
+                                    : 'https://your-default-image-url.com/default.jpg'} alt='' />
                     </Box>
   <CardContent sx={{ flex: "1 0 auto" }}>
                             {/* {curElem?.product?.quantity_label <= 0 ? (
@@ -110,16 +115,16 @@ const HomeBanner3 = () => {
                             <br />
   
                             <p className="Homeon_selling_txt">
-                            Bowflex BXT8Ji Treadmill
+                            {section2?.[1]?.prod_name}
                             </p>
   
                             <div className="Homefeaturetxt" id="price">
-                        <p className="flbrandtxt1" id="price">
+                        {/* <p className="flbrandtxt1" id="price">
                           <del className="deleteprice"> AED 100
                           </del> <span style={{ color: "red" }}>
                             AED 80
                           </span>
-                            
+                            </p> */}
                                 {/* {curElem?.product?.discount_price ? (
                                   <>
                                     <del className="deleteprice">
@@ -132,27 +137,127 @@ const HomeBanner3 = () => {
                                 ) : (
                                   <>AED {curElem?.product?.unit_price}</>
                                 )} */}
-                              </p>
+                           
                             </div>
                           </CardContent>
                   </Card>
+                  </Link>
                 </Grid>
-              ))}
+                 <Grid item lg={6} xs={12} md={6} sm={12} key={""}>
+                <Link to={section2?.[1]?.prod_url1
+                  
+               }>
+                <Card sx={{ boxShadow: 3 }}>
+                 
+                   
+              <Box sx={{ position: "relative" }}>
+                   
+                     <Badge
+   badgeContent="SALE !" 
+   sx={{
+     position: "absolute",
+     top: 30,
+     right: 50,
+     zIndex: 10,
+     padding: "20px",
+     fontSize: "1rem",
+     width: 100,
+     "& .MuiBadge-badge": {
+       backgroundColor: "#995E65", // Wine Red color
+       color: "white", // Ensures text is visible
+       padding: "15px",
+      
+     },
+   }}
+ />
+                      <CardMedia component="img"
+                        
+
+                        image={section2?.[1]?.prod_image1 
+                          ? `${secionimage}/${section2?.[1]?.prod_image1}`
+                          : 'https://your-default-image-url.com/default.jpg'} 
+                        alt={""} />
+                   </Box>
+ <CardContent sx={{ flex: "1 0 auto" }}>
+                           {/* {curElem?.product?.quantity_label <= 0 ? (
+                             <Avatar
+                               sx={{
+                                 backgroundColor: "red",
+                                 width: 70,
+                                 height: 20,
+                                 fontSize: ".83rem",
+                                 float: "right",
+                                 position: "relative",
+                                 fontFamily: "imported",
+                                 visibility:
+                                   curElem?.product?.quantity_label <= 0
+                                     ? "visible"
+                                     : "hidden",
+                                 zIndex: 1000,
+                               }}
+                               variant="rounded"
+                             >
+                               Sold Out
+                             </Avatar>
+                           ) : (
+                             <Avatar
+                               sx={{
+                                 backgroundColor: "darkgreen",
+                                 width: 70,
+                                 height: 25,
+                                 float: "right",
+                                 position: "relative",
+                                 fontSize: ".85rem",
+                                 zIndex: 1000,
+ 
+                                 visibility: curElem?.product?.discount_price
+                                   ? "visible"
+                                   : "hidden",
+                               }}
+                               variant="rounded"
+                             >
+                               {getProgress(start, end)} Off
+                             </Avatar>
+                           )} */}
+ 
+                           <br />
+ 
+                           <p className="Homeon_selling_txt">
+                          {section2?.[1]?.prod_name1}
+                           </p>
+ 
+                           <div className="Homefeaturetxt" id="price">
+                       {/* <p className="flbrandtxt1" id="price">
+                         <del className="deleteprice"> AED 100
+                         </del> <span style={{ color: "red" }}>
+                           AED 80
+                         </span>
+                           
+                            
+                             </p> */}
+                           </div>
+                         </CardContent>
+                  </Card>
+                  </Link>
+               </Grid>
+           
             </Grid>
                   </Grid>
                   <Grid item lg={5} md={5} sm={12} xs={12}>
             <img
       
-              src={data?.[0].url} 
+              src={`${secionimage}/${section2?.[0]?.
+                image
+                }`}
               alt="" width={'100%'} style={{ borderRadius: '10px' }} />
                     <br/>
-                      <h2 className="Home_new_content_1" style={{textAlign:'left',paddingTop:'20px',paddingBottom:'20px'}}>The Perfect Choice for Athletic Excellence</h2>
-            <p className="new_banner_text">
-            For athletes and active individuals seeking the ideal blend of energy and nutrition, look no further. The Salted Caramel Bar and Coffee Grape Bar offer the perfect combination of taste and sustenance to fuel your performance.
-            </p>
+                      <h2 className="Home_new_content_1" style={{textAlign:'left',paddingTop:'20px',paddingBottom:'20px'}}>{section2?.[0]?.name}</h2>
+            <p className="new_banner_text"  dangerouslySetInnerHTML={{ __html:section2?.[0]?.description }}/>
+    
+       
             <Button variant="contained" className="popViewbtn_1" id="addtocart">
-              Shop All
-            </Button>
+
+              <Link to={section2?.[0]?.url} style={{ color: 'white', textDecoration: 'none' }}>Shop All</Link>           </Button>
                   </Grid>
         </Grid>
       </Box>
