@@ -1,6 +1,9 @@
 import { backdropClasses, Box, Button, CardHeader, Grid } from '@mui/material';
 import React from 'react'
 import Slider from 'react-slick';
+import { Section5 } from '../../../client-api/APInewdesign';
+import { secionimage } from '../Home';
+import { Link } from 'react-router-dom';
 
 const Subscription = () => {
     const settings = {
@@ -14,6 +17,9 @@ const Subscription = () => {
         // cssEase: "linear"
       };
       const items = Array.from({ length: 3 }, () => "Subscribe and Save 20%");
+  
+  const { section5} = Section5();
+    console.log(section5,"section4")
   return (<div>
     <div className="slider-container"
     style={{backgroundColor:"#995E65",color: 'white',padding:'30px',fontWeight:"bold", marginBottom:'10px'}}>
@@ -34,20 +40,29 @@ const Subscription = () => {
                         
                       
                     <Grid item lg={3} md={6} sm={6} xs={12}>
-                            <img src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/chocolate-powder.png"
+          <img
+              src={`${secionimage}/${section5?.[0]?.
+                                               image
+                                               }`} 
+            // src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/chocolate-powder.png"
                             alt='' width={'100%'}/>
                         </Grid>
                         <Grid item lg={3} md={6} sm={6} xs={12}>
-                        <img src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/oatmeal-cookies.png"
+                        <img 
+              src={`${secionimage}/${section5?.[0]?.
+                image2
+                }`}             
+            // src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/oatmeal-cookies.png"
                             alt='' width={'100%'}/>
                             </Grid>
           
           <Grid item  lg={6} md={12} sm={12} xs={12}>
-          {/* <p className='new_banner2' style={{
-                                paddingTop:'20px'
-                            }}>100% plant-based</p> */}
-                            <h1 className="Home_new_content_1" style={{textAlign:'left'}}> Join & Get 20% Off</h1>
-                            <p className='new_banner_text'>At Fuel+, we’re on a mission to redefine the way you think about nourishing your body. We believe that exceptional taste should coexist with unwavering commitment to your well-being and the planet. That’s why we’ve dedicated ourselves to crafting a range of plant-based foods, organic powders, bars, and chocolates that are as delicious as they are nourishing.</p>
+      
+          <h1 className="Home_new_content_1" style={{ textAlign: 'left' }}> {section5?.[0]?.name}</h1>
+          <p className='new_banner_text'
+          
+          
+          dangerouslySetInnerHTML={{ __html:section5?.[0]?.description }}/>
                             <Button
                   variant="contained"
                   className="popViewbtn_1"
@@ -55,7 +70,7 @@ const Subscription = () => {
                   id="addtocart"
                   // onClick={() => handleAddToCart(addToCartData)}
                 >
-                 Shop All
+                <Link to={section5?.[0]?.url} style={{ color: 'white', textDecoration: 'none' }}>Shop All</Link>          
                 </Button>
                         </Grid>
                   

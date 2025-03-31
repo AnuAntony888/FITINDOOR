@@ -157,3 +157,52 @@ export function Section2() {
 
  
 }
+
+
+//section4 
+export function Section4() {
+  const formData = new FormData();
+  formData.append("section_type[]", 4);
+
+  const getSection4 = async () => {
+    const res = await axios.post(`${API}/fetch-home-section`, formData, {
+      method: "POST",
+    });
+    console.log(res.data?.data,"section1");
+    return res.data?.data;
+  };
+
+  const {
+    data: section4,
+    error: issection4,
+    isLoading: issection4Error ,
+  } = useQuery(["getSection4"], getSection4 );
+  return { section4,issection4,issection4Error};
+
+ 
+}
+
+
+
+//section5
+export function Section5() {
+  const formData = new FormData();
+  formData.append("section_type[]", 5);
+
+  const getSection5 = async () => {
+    const res = await axios.post(`${API}/fetch-home-section`, formData, {
+      method: "POST",
+    });
+    console.log(res.data?.data,"section1");
+    return res.data?.data;
+  };
+
+  const {
+    data: section5,
+    error: issection5,
+    isLoading: issection5Error ,
+  } = useQuery(["getSection5"], getSection5 );
+  return { section5,issection5,issection5Error};
+
+ 
+}
