@@ -266,20 +266,3 @@ prod_url}>
 };
 
 export default HomeBanner3;
-const products = [
-    {
-      id: 1,
-      name: "Chocolate Caramel",
-      price: "$2.50",
-      originalPrice: "$3.50",
-      image: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/10/product-8-1024x1024.jpg",
-    },
-    {
-      id: 2,
-      name: "Protein Fusion Powder",
-      price: "$49.00 - $59.00",
-      originalPrice: "$3.50",
-      image: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/10/product-7-1024x1024.jpg",
-    },
-    
-  ];
