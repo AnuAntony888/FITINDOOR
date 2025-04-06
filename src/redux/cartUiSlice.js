@@ -80,7 +80,7 @@ const cartUiSlice = createSlice({
     },
 
     removeProductFromCart: (state, action) => {
-      console.log(action.payload, "removeProductFRomCART");
+      // console.log(action.payload, "removeProductFRomCART");
       const removeCart = state.cart_items.filter(
         (item) =>
           item?.product?.product_id !== action.payload.product?.product_id

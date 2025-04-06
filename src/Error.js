@@ -8,7 +8,7 @@ function refreshPage() {
   window.location.href = "/";
 }
 export const ErrorPage = () => {
-  console.log();
+  // console.log();
   return (
     <Grid container spacing={2} sx={{ padding: "5%" }}>
       <Grid item xs={10} md={10} sm={10} lg={10}>

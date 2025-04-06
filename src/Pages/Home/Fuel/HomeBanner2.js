@@ -1,5 +1,6 @@
 import { Box, Button, CardHeader, Grid, Typography } from '@mui/material'
 import React from 'react'
+import logo from '../../../Assets/320007864_878226486959511_8656414308010351970_n.jpg'
 
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Newcss.css'
@@ -14,7 +15,10 @@ const HomeBanner2 = () => {
           <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3} alignItems="center" sx={{ padding: '2%' }}>
                   <Grid item lg={12} md={12} xs={12}>
-                      <img src="https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/Minimalist-Natural-Organic-Kreis-Logo.jpg" alt=''/>
+                      <img
+                          src={logo} alt=''
+                          width={'100px'}
+                     />
                <br/>
                       <p className='new_banner2' style={{
                           paddingTop:'20px'
@@ -128,22 +132,22 @@ const HomeBanner2 = () => {
 export default HomeBanner2
 const Data = [{
     img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-6.png",
-    text1: "High-Protein",
-    text2: "Empowering Your Performance",
+    text1: "Core Strength",
+    text2: "Build resilience, power, and confidence.",
 },
 {
     img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-5-1.png",
-    text1: "Organic & Vegan",
-    text2: "Nature’s Purest Nourishment",
+    text1: "Strong Bond",
+    text2: "Trusted fitness, lasting wellness support.",
     }
     ,
     {
         img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-8.png",
-        text1: "Healthy & Handmade",
-        text2: "Beautifully Crafted, Lovingly Made",
+        text1: "Peak Wellness",
+        text2: "BAchieve fitness, health, and vitality.",
     },
     {
         img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-7.png",
-        text1: "Complete Nutrition",
-        text2: "Fueling Your Best Self",
+        text1: "Fit Nexus",
+        text2: "Your hub for total wellness.",
     }]

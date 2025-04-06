@@ -41,6 +41,7 @@ const Home = () => {
       <SopbyCategory data={datasubcategory?.[0]?.sub_categories} name={'Fitness Indoor'} />
       <HomeBanner3 />
       <BestSeller />
+      <Listbrands />
       <SopbyCategory data={datasubcategory?.[1]?.sub_categories} name={ 'Activities Outdoor'} />
       <HomeBanner4 />
       <SopbyCategory data={datasubcategory?.[2]?.sub_categories} name={'Games & Sports' } />

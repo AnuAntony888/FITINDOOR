@@ -126,7 +126,7 @@ function Singin(props) {
         "https://www.googleapis.com/oauth2/v3/userinfo",
         { headers: { Authorization: `Bearer ${response.access_token}` } }
       );
-      console.log(userInfo, "userinfo");
+      // console.log(userInfo, "userinfo");
       const userData = await googlelogin({
         email: userInfo?.data?.email,
         name: userInfo?.data?.name,
@@ -172,7 +172,7 @@ function Singin(props) {
 
   const fbApi = async (response) => {
     try {
-      console.log(response);
+      // console.log(response);
       const userData = await fblogin({
         id: response.data.id,
         email: response.data.email,

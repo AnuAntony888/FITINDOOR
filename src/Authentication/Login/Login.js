@@ -140,7 +140,7 @@ function Login(props) {
         ],
       });
     } catch (error) {
-      console.log(error, "normal error");
+      // console.log(error, "normal error");
       Toastsucess("Email & Password does not match with our record !");
     }
   };
@@ -222,14 +222,14 @@ function Login(props) {
 
   const fbApi = async (response) => {
     try {
-      console.log(
-        response,
-        response.id,
-        response.email,
-        response.name,
-        "fbresponse"
-      );
-      console.log(`${response.id}@dummy.com`);
+      // console.log(
+      //   response,
+      //   response.id,
+      //   response.email,
+      //   response.name,
+      //   "fbresponse"
+      // );
+      // console.log(`${response.id}@dummy.com`);
       const userData = await fblogin({
         id: response.id,
         email: response.email ? response.email : `${response.id}@dummy.com`,

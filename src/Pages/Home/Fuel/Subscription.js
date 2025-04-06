@@ -108,21 +108,21 @@ export default Subscription
 const Data = [{
     img: "https://demo.anarieldesign.com/fuel/wp-content/themes/fuel/assets/images/icon-1.webp",
     text1: "Free Shipping",
-    text2: "Free Shipping for orders over $110",
+    text2: "Enjoy fast and free delivery on all your orders.",
 },
 {
     img: "https://demo.anarieldesign.com/fuel/wp-content/themes/fuel/assets/images/icon-2.webp",
-    text1: "Money Guarantee",
-    text2: "Within 30 days for an exchange.",
+    text1: "Secured Payment",
+     text2: "Shop confidently with our secure payment gateway.",
     }
     ,
     {
         img: "https://demo.anarieldesign.com/fuel/wp-content/themes/fuel/assets/images/icon-3.webp",
-        text1: "Online Support",
-        text2: "24 hours a day, 7 days a week",
+        text1: "Customer Support",
+        text2: "Our friendly support team is here to help you 24/7",
     },
     {
         img: "https://demo.anarieldesign.com/fuel/wp-content/themes/fuel/assets/images/icon-4.webp",
-        text1: "Flexible Payment",
-        text2: "Pay with Multiple Credit Cards",
+        text1: "Free Installation",
+        text2: "Get hassle-free installation at no extra cost.",
     }]

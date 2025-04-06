@@ -49,7 +49,7 @@ export function useCODGuest() {
     error: isordererrorgust,
   } = useMutation(CODHandlerGust, {
     onSuccess: (data) => {
-      console.log(data, "reponse data");
+      // console.log(data, "reponse data");
     },
     onError: (error) => {
       throw new Error(error.message);
