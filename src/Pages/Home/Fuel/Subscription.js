@@ -16,8 +16,13 @@ const Subscription = () => {
         autoplaySpeed: 2000,
         // cssEase: "linear"
       };
-      const items = Array.from({ length: 3 }, () => "Subscribe and Save 20%");
-  
+      // const items = Array.from({ length: 3 }, () => "Strength Training Equipment, Home Gym Essentials, Smart Home Gym Equipment");
+      const items = [
+        "Strength Training Equipment",
+        "Home Gym Essentials",
+        "Smart Home Gym Equipment"
+      ];
+      
   const { section5} = Section5();
     console.log(section5,"section4")
   return (<div>
