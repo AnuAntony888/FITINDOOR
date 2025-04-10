@@ -7,8 +7,10 @@ import './Newcss.css'
 import { Section1 } from '../../../client-api/APInewdesign';
 import { secionimage } from '../Home';
 import { Link } from 'react-router-dom';
+import { Newhome1middilebannerlogo } from '../../../client-api/ApiHomeBanner';
 const HomeBanner2 = () => {
     const { section1} = Section1();
+    const { data } = Newhome1middilebannerlogo();
     console.log(section1,`https://admin.myfamilyfitness.com/public/uploads/section/images/${section1?.prod_image}`,"section1")
   return (
       <div>
@@ -16,7 +18,7 @@ const HomeBanner2 = () => {
               <Grid container spacing={3} alignItems="center" sx={{ padding: '2%' }}>
                   <Grid item lg={12} md={12} xs={12}>
                       <img
-                          src={logo} alt=''
+                          src={ `https://admin.myfamilyfitness.com/uploads/banner/images/${data?.[0].image}`} alt=''
                           width={'100px'}
                      />
                <br/>
@@ -26,9 +28,13 @@ const HomeBanner2 = () => {
                   </Grid>
                   <Grid item lg={12} md={12} xs={12}>
                       <Box sx={{ paddingBottom: '50px' }} >
-                          <h2 className="Home_new_content_1" >Elevating Your Wellness with Plant-Powered Goodness!</h2>
-                       
-                      <h2 className="Home_new_content_1">  Powered Goodness!</h2></Box>
+                          {/* <h2 className="Home_new_content_1" >{data?.[0].description}</h2> */}
+                          <h2 className="Home_new_content_1" 
+        dangerouslySetInnerHTML={{ __html: data?.[0].description }}
+      /> 
+                      {/* <h2 className="Home_new_content_1">  Powered Goodness!</h2>
+                      */}
+                      </Box> 
                   
                       </Grid>
                   <Grid item lg={4} md={6} sm={12} xs={12}>
@@ -104,9 +110,16 @@ const HomeBanner2 = () => {
   </Grid>
           </Box>
           {/**********************static banner************************* */}
-          <Grid container spacing={3} sx={{ padding:"1%",backgroundColor:'#F5F5F5'}}>
+          <Grid container spacing={3} sx={{ padding:"2%",backgroundColor:'#F5F5F5',marginLeft:'0px'}}>
               {Data.map((data,index)=>(<>
-              <Grid  item lg={3} md={6} sm={6} xs={12}>
+              <Grid  item lg={3} md={6} sm={6} xs={12}
+                           
+            //   sx={{
+            //     display: 'flex',
+            //     justifyContent: 'center',
+            //     alignItems: 'center',
+            //   }}
+                  >
          
             
   <CardHeader

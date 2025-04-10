@@ -82,22 +82,28 @@ const Subscription = () => {
         </Grid>
                 </Box>
       {/**************************************/}
-        <Grid container spacing={3} sx={{ padding:"1%",backgroundColor:'#F5F5F5'}}>
-                    {Data.map((data,index)=>(<>
-                    <Grid  item lg={3} md={6} sm={6} xs={12}>
-               
-                  
-        <CardHeader
-          avatar={
-            <img src={data.img} alt='' style={{objectFit:'cover'}}/>
-          }
-                                title={<h6 style={{ textAlign: 'left', fontWeight: 'bold', }}>{data.text1}</h6>}
-                                subheader={<p style={{ textAlign: 'left', }}>{data.text2}</p>}
-       
-        />
-      </Grid>
-      </>))}
-      </Grid>
+      <Grid container spacing={3} sx={{ padding: "2%", backgroundColor: '#F5F5F5', marginLeft: '0' }}>
+  {Data.map((data, index) => (
+    <Grid item lg={3} md={6} sm={6} xs={12} sx={{ p: 2 }} key={index}>
+      <CardHeader
+        avatar={
+          <img src={data.img} alt='' style={{ objectFit: 'cover' }} />
+        }
+        title={
+          <h6 style={{ textAlign: 'left', fontWeight: 'bold' }}>
+            {data.text1}
+          </h6>
+        }
+        subheader={
+          <p style={{ textAlign: 'left' }}>
+            {data.text2}
+          </p>
+        }
+      />
+    </Grid>
+  ))}
+</Grid>
+
       
              
       </div>

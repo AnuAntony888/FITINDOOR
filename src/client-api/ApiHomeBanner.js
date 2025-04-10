@@ -218,3 +218,15 @@ export function Newhome1middilebanner() {
   const { data, error, isLoading } = useQuery("banner23", Banner23);
   return { data, error, isLoading };
 }
+
+
+//newhome1middilebanner
+export function Newhome1middilebannerlogo() {
+  const Banner24 = async () => {
+    const res = await axios.get(`${API}/fetch-home-banner?banner_type=24`);
+
+    return res.data.data;
+  };
+  const { data, error, isLoading } = useQuery("banner24", Banner24);
+  return { data, error, isLoading };
+}
