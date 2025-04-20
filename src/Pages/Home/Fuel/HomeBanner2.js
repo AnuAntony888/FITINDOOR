@@ -7,6 +7,10 @@ import './Newcss.css'
 import { Section1 } from '../../../client-api/APInewdesign';
 import { secionimage } from '../Home';
 import { Link } from 'react-router-dom';
+import corestreng from '../../../Assets/Core Strength.png'
+import strongbond from '../../../Assets/Strong Bond.png'
+import peakwell from '../../../Assets/Peak Wellness.png'
+import fitnex from '../../../Assets/Fit Nexus 1.png'
 import { Newhome1middilebannerlogo } from '../../../client-api/ApiHomeBanner';
 const HomeBanner2 = () => {
     const { section1} = Section1();
@@ -124,7 +128,7 @@ const HomeBanner2 = () => {
             
   <CardHeader
     avatar={
-      <img src={data.img} alt='' style={{objectFit:'cover'}}/>
+      <img src={data.img} alt='' style={{objectFit:'cover',width:'30px',height:'30px'}}/>
     }
                           title={<h6 style={{ textAlign: 'left', fontWeight: 'bold', }}>{data.text1}</h6>}
                           subheader={<p style={{ textAlign: 'left', }}>{data.text2}</p>}
@@ -144,23 +148,23 @@ const HomeBanner2 = () => {
 
 export default HomeBanner2
 const Data = [{
-    img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-6.png",
+    img:  corestreng ,
     text1: "Core Strength",
     text2: "Build resilience, power, and confidence.",
 },
 {
-    img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-5-1.png",
+    img: strongbond,
     text1: "Strong Bond",
     text2: "Trusted fitness, lasting wellness support.",
     }
     ,
     {
-        img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-8.png",
+        img: peakwell,
         text1: "Peak Wellness",
         text2: "BAchieve fitness, health, and vitality.",
     },
     {
-        img: "https://demo.anarieldesign.com/fuel/wp-content/uploads/sites/42/2023/11/icon-7.png",
+        img: fitnex,
         text1: "Fit Nexus",
         text2: "Your hub for total wellness.",
     }]
